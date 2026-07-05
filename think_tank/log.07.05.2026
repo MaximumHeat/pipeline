@@ -1,0 +1,32 @@
+# Log for 07.05.2026 July 5, 2025
+# Critically Massive Enterprises
+# A Seabolt Solutions Division
+# Dev = Andrew Seabolt seaboltservices1@gmail.com
+
+Started this project on the 3rd of this month. I was inspired by a video that I saw
+on YouTube by a Senior Engineer who had decades of experience coding. His recommendation
+is to create a pipeline with an architect and builder agent. I am aware that creating
+agents with separate functions is considered the gold standard when using agentic
+workflows to generate software solutions. However, this is my first attempt at building
+my own pipeline. I am taking it slow, giving myself until September to officially launch
+the pipeline, so that I don't rush into production. Since this is the factory of my code,
+the very foundation upon which all other things will be built, I want it to be stable, 
+efficient, no-nonsense & purposeful. 
+
+Day 1: On July 3rd, I created the architect + builder blueprint and created the prompt
+for the architect builder. I am going to refine the architect as much as possible &
+experiment with as many models as necessary to get a beautiful agent that works flawlessly
+to design the blueprint for the code. 
+
+All other agents are barred from coding. 
+
+Day 2: Built the /pipeline directory & some subfolders. Focusing on the think tank, otherwise
+known as the research team for my build. This will be comprised of 3 agents:
+
+1: SCUBA - data dog
+2: MOZART - composer and synthesizer
+3: PNUT - The judge; named after my dear friend Ronald Hibbard, who passed away. RIP Ronnie. 
+          You are missed, but never forgotten. This one's for you, homie. Love you dude.
+
+Day 3: Built the SOUL.md for SCUBA, MOZART, and PNUT. Currently working on the scripts
+to chain them together beautifully into a wonderful orchestra. 
