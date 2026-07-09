@@ -2,7 +2,7 @@ import asyncio
 import os
 import uuid
 from .config_loader import load_agent_config
-from .inference_client import InferenceClient, OLLAMA_ENDPOINT
+from .inference_client import InferenceClient, VLLM_ENDPOINT ## Change VLLM_ENDPOINT to OLLAMA_ENDPOINT if using Ollama
 from .agents import ScubaAgent, MozartAgent, PnutAgent
 from .critique_accumulator import CritiqueAccumulator
 from .database import init_db, create_run, update_run_status, insert_iteration, DB_PATH as DEFAULT_DB_PATH
