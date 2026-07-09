@@ -69,7 +69,8 @@ async def load_agent_config(path: str) -> dict:
     raw_yaml, body = split_front_matter(content)
     config = validate_config(raw_yaml)
     config.setdefault("agent_name", "UNKNOWN")
-    config.setdefault("model_target", "hermes-3-llama3-8b")
+    config.setdefault("model_target", "hermes-3-8b.Q4_K_M.gguf")   ## Comment this out if using model below, I have edited it to fit my specific model
+##  config.setdefault("model_target", "hermes-3-llama3-8b")      ## Uncomment this if using standard hermes-3-llama3-8b model 
     config["system_instruction_body"] = body
     config.setdefault("runtime_parameters", dict(DEFAULT_RUNTIME))
     return config
