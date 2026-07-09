@@ -1,13 +1,17 @@
 import json
 import httpx
 
-OLLAMA_ENDPOINT = "http://localhost:11434/v1/chat/completions"
-VLLM_ENDPOINT = "http://localhost:8000/v1/chat/completions"
+# If using Ollama, uncomment below and make sure it matches your Ollama backend:
+# OLLAMA_ENDPOINT = "http://localhost:11434/v1/chat/completions"
+
+
+VLLM_ENDPOINT = "http://127.0.0.1:2242/v1"
 REQUEST_TIMEOUT = 120.0
 
+# Change 'endpoint: str = VLLM_ENDPOINT' to 'OLLAMA_ENDPOINT' if using Ollama
 
 class InferenceClient:
-    def __init__(self, endpoint: str = OLLAMA_ENDPOINT, timeout: float = REQUEST_TIMEOUT):
+    def __init__(self, endpoint: str = VLLM_ENDPOINT, timeout: float = REQUEST_TIMEOUT):
         self.endpoint = endpoint
         self.timeout = timeout
         self._client = httpx.AsyncClient(timeout=timeout)
@@ -36,3 +40,4 @@ class InferenceClient:
 
     async def close(self):
         await self._client.aclose()
+
